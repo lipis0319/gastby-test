@@ -37,13 +37,13 @@ const config: GatsbyConfig = {
   }, "gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      "icon": "src/assets/images/icon.png"
     }
   }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
-      "path": "./src/images/"
+      "path": "./src/assets/images/"
     },
     __key: "images"
   },
@@ -55,7 +55,7 @@ const config: GatsbyConfig = {
       components: path.join(__dirname, 'src/components'),
       images: path.join(__dirname, 'src/assets/images'),
       icons: path.join(__dirname, 'src/assets/icons'),
-      // styles: path.join(__dirname, 'src/styles'),
+      styles: path.join(__dirname, 'src/styles'),
     },
   },
 ]
